@@ -11,6 +11,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashPage()));
 }
 
+//-----Widgets------
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,5 +37,26 @@ class SplashPage extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class LandingPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        //items aligned downwards
+        //child text element saying your cards
+        //child image carousel container
+        //child image carousel
+        //child image elements
+        //image elements contain a title
+        //image elements contain a qr code
+        //image elements contain a link
+        // 2 buttons are child of main container but not other elements. on same level as text element
+        //create a card or delete cards buttons container
+        //create a card button
+        //delete card button
+
+        );
   }
 }

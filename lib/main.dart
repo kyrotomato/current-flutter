@@ -11,7 +11,8 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashPage()));
 }
 
-//-----Widgets------
+//------Pages-------
+//SplashPage
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,23 +41,35 @@ class SplashPage extends StatelessWidget {
   }
 }
 
-class LandingPage extends StatelessWidget {
+//Landing Page
+class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        //items aligned downwards
-        //child text element saying your cards
-        //child image carousel container
-        //child image carousel
-        //child image elements
-        //image elements contain a title
-        //image elements contain a qr code
-        //image elements contain a link
-        // 2 buttons are child of main container but not other elements. on same level as text element
-        //create a card or delete cards buttons container
-        //create a card button
-        //delete card button
+    return Scaffold(
+      //items aligned downwards by scaffold
+      //background for page
+      backgroundColor: mainVariant,
 
-        );
+      // 2 buttons are child of main container but not other elements. on same level as text element
+      //create a card or delete cards buttons container
+      //create a card button
+      //delete card button
+    );
   }
 }
+//-----Widgets------
+class ImageSpinner extends StatelessWidget
+@override
+Widget build(BuildContext context) {
+  return Container(
+      //child text element saying your cards 1
+
+      //child image carousel container 1
+      //child image carousel 2
+      //child image elements 3
+      //image elements contain a title 4
+      //image elements contain a qr code 4
+      //image elements contain a link 4
+  );
+}
+

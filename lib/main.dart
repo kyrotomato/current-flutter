@@ -65,26 +65,31 @@ class ImageSpinner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
         child: Container(
-      //added margin to move e cards down to fit better. Might need to move this later
-      margin: EdgeInsets.only(top: 40),
-      //child text element saying your cards 1
-      child:
-          // gonna add this to a seperate widget for simplicity and rendering across app
-          // child: Text(
-          //   'Your E-Cards',
-          //   style: TextStyle(fontSize: 30),
-          //),
-          //child image carousel container 1
-          ListView(
-        children: [
-          //child image carousel 2
-        ],
-      ),
-
-      //child image elements 3
-      //image elements contain a title 4
-      //image elements contain a qr code 4
-      //image elements contain a link 4
-    ));
+            //added margin to move e cards down to fit better. Might need to move this later
+            margin: EdgeInsets.only(top: 40),
+            //child text element saying your cards 1
+            child:
+                // gonna add this to a seperate widget for simplicity and rendering across app
+                // child: Text(
+                //   'Your E-Cards',
+                //   style: TextStyle(fontSize: 30),
+                //),
+                //child image carousel container 1
+                Center(
+              child:
+                  //child image elements 2
+                  Card(
+                child: Column(
+                  children: [
+                    const ListTile(
+                      //image elements contain a title 3
+                      title: Text('My Website', textAlign: TextAlign.center),
+                    ),
+                    //qr code asset
+                    Image.asset('assets/images/mywebsiteqr.png'),
+                  ],
+                ),
+              ),
+            )));
   }
 }
